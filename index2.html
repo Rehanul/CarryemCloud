@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Carry'em Cloud</title>
+		<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/jquery-index.js"></script>
+	</head>
+	<body>
+
+	<center>
+		<div id="upperbody" >
+			<header>
+			
+				<a class="headerlinks" id="download" href="#">Download</a>
+				<div id="bubble">
+					<a href="#" id="bubbletext">hello</a>
+				
+				</div>
+				<a class="headerlinks" href="about.html">About us</a>
+				<a class="headerlinks" href="query.html">Query form</a>
+				<a class="headerlinks" href="tour.html">Take a tour</a>
+				<a class="headerlinks" href="faq.html">FAQ's</a>
+			</header>
+			
+			<div id="mainbody">
+			
+				<div id="signup">
+				<form onSubmit="return valid(this);" method="POST" action="signup.php">
+                                        <input type="text" name="username" id="t1" placeholder="Username" onblur="checkusername();" class="textbox"/>
+                                        <input type="password" name="password" id="t2" placeholder="Password" onblur="checkpassword()" class="textbox"/>
+                                        <input type="text" name="email" id="t3" placeholder="Email" onblur="checkemail();" class="textbox"/>
+                                        <input type="tel" name="contact" id="t4" placeholder="Contact" onblur="checkcontact();" class="textbox"/>
+					<input type="submit" value="Create"/>
+                                            
+                                        </form>
+				</div>
+				
+				
+				<div id="cloud">
+					<h1>Carry'em Cloud</h1>
+					<img id="cloudlogo" src="images/cloudlogo2.png"/>
+					<hr id="rcenterlineup" />
+					<hr id="lcenterlineup" />
+					<hr id="centerline" />
+					<hr id="rcenterlinedown" />
+					<hr id="lcenterlinedown" />
+					<div id="asksignup">
+						<p>New to<br/>Cloud Space ?</p>
+						<input type="button" id="signupbtn" value="Sign up"/>
+					</div>
+					<div id="asklogin">
+						<p>Already have<br/>an account</p>
+						<input type="button" id="signinbtn" value="Sign in"/>
+					</div>
+				</div>
+				
+				<div id="login">
+					<form onSubmit="return valid2(this);" action="check_login.php" method="post">
+						<input type="text" placeholder="Username" id="username" onblur="checkloginusername();" name="username" class="textbox"/>
+						<input type="password" placeholder="Password" id="password" onblur="checkloginpassword();" name="password" class="textbox"/>
+						<input type="submit" value="Login"/>
+					</form>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		<div id="lowerbody">
+			<hr/>
+			<h2>Carry your data where ever you want</h2><!--Carry your data in your pocket-->
+			<p>with Cloud Space you can access your data anytime, anywhere you want with just a single click</p>
+			
+			<div id="sociallinks" >
+			
+					<a href="https://facebook.com" >
+						<img src="images/facebook_logo.png" class="social_item" />
+					</a>
+					<a href="https://twitter.com" >
+						<img src="images/twitter_logo.png" class="social_item" />
+					</a>
+					<a href="https://plus.google.com" >
+						<img src="images/googleplus_logo.png" class="social_item" />
+					</a>
+					<a href="https://linkedin.com" >
+						<img src="images/in_logo.png" class="social_item" />
+					</a>
+					<a href="https://myspace.com" >
+						<img src="images/myspace_logo.png" class="social_item" />
+					</a>
+				
+			</div>
+			
+			<p id="copy" style="margin-bottom:0">Copyright &copy All Rights Reserved</p>
+			
+		</div>
+		</center>
+		
+	</body>
+</html>

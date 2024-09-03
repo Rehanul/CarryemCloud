@@ -1,0 +1,83 @@
+
+
+/* dock - top */
+#dock {
+	width:42%;
+	height: 35px; 
+	float:right;
+	margin-top: 0.8em;
+}
+.dock-item img{
+	width:35px;
+	height:35px;
+	margin: 0px 3px 0px 3px;
+}
+
+dock-container {
+	position: absolute;
+	height: 30px;
+	width:100%;
+	padding-left: 10px;
+}
+.dock-item {
+	display: inline;
+	width: 2.5em;
+	color: #000;
+	position: relative;
+	top: 0px;
+	text-align: center;
+	text-decoration: none;
+	font: bold 12px Arial, Helvetica, sans-serif;
+}
+
+.dock-item span {
+	display: none; 
+	padding-left: 20px;
+}
+@media all and (min-width: 900px) and (max-width: 1000px)
+{
+		.dock-item img{
+		width:30px;
+		height:30px;
+		margin: 0px 1px 0px 1px;
+	}
+
+
+}
+	
+/*layout for desktop*/
+@media all and (min-width: 700px) and (max-width: 900px)
+{
+		.dock-item img{
+		width:30px;
+		height:30px;
+		margin: 0px 1px 0px 1px;
+	}
+	#searchbox{
+	width:39%;
+	}
+
+}
+@media all and (min-width: 500px) and (max-width: 700px)
+{
+#searchbox{
+	width:70%;
+	}
+	#dock{
+	width:100%;
+	}
+	}
+	@media all and (max-width: 500px)
+{
+.dock-item img{
+		width:20px;
+		height:20px;
+		margin: 0px 0px 0px 0px;
+	}
+#searchbox{
+	width:50%;
+	}
+	#dock{
+	width:100%;
+	}
+	}
